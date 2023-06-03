@@ -24,13 +24,10 @@ Jest ona znajdowana przez rozwiązanie selektywnego problemu komiwojażera, przy
 
 
 ### Generowanie inicjalnej populacji
-- W pętli *S* razy:
-	1. Wylosuj długość śnieżki *n* od 2 do *N*
-	2. Wylosuj kolejne *n* wierzchołki ścieżki
-	3. Zapisz ścieżkę i jej koszt. Jeśli długość sekwencji przekracza *N*, wróć do kroku 1. i wygeneruj ją ponownie.
+Dzieje się to za pomocą Greedy Search po wierzchołkach. Jest wybierany losowy początkowy, a następne dobierane kolejne z najniższymi kosztami tak długo jak długość ścieżki jest pod limitem.
 
 ### Wybór najlepszego odsetka populacji
-Każda sekwencjia w populacji dostaje ocenę w postaci wzoru $$|\frac{1}{2*w-k-(W+2)}|$$ który będzie dawał wyniki z przedziału (0;1>.  *w* to liczba wierzchołków w ścieżce, *k* to koszt ścieżki, a *W* to liczba wszystkich wierzchołków w grafie. Przy tym wzorze idealny wynik, taki który przechodzi przez wszystkie wierzchołki w grafie i w każdym przejściu wykorzystujący krawędzie o minimalnym koszcie 1, będzie miał najlepszą ocenę 1, a gorsze ścieżki będą miały oceny ułamkowe.
+Każda sekwencja w populacji dostaje ocenę w postaci wzoru $$|\frac{W-W_{min}}{W_{max}-W_{min}}|$$ który będzie dawał wyniki z przedziału <0;1>.  *W* to liczba wierzchołków w ścieżce, *Wmin*,*Wmax* to są odpowiednio największa i najmniejsza liczba wierzchołków w ścieżkach z obecnej populacji. Ocena jest interpolacją liniową między nimi. Nie uwzględniam w niej kosztu ścieżki, jako że w algorytmie jest dopełniany podczas rozmnażania.
 
 
 
@@ -53,7 +50,6 @@ Te oceny są wykorzystywane jako wagi przy wybieraniu losowych *S*\**sel* rodzic
 Każde dziecko ma pewne prawdopodobieństwo przejścia mutacji. Jeśli tak się stanie może się wydarzyć jedna z 3 rzeczy.
 1. 2 losowe wierzchołki zostaną zamienione ze sobą miejscami
 2. Zostanie dodany losowy wierzchołek w losowym miejscu w ścieżce. 
-3. Zostanie usunięty losowy wierzchołek ze ścieżki.
 
 Jeśli po mutacji koszt ścieżki wzrósłby ponad limit inne mutacje będą po kolei powtarzane w pętli aż nie powstanie akceptowalna (albo do ustalonej granicy powtórzeń)
 
