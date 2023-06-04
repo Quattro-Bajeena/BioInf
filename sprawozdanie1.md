@@ -53,6 +53,10 @@ Każde dziecko ma pewne prawdopodobieństwo przejścia mutacji. Jeśli tak się 
 
 Jeśli po mutacji koszt ścieżki wzrósłby ponad limit inne mutacje będą po kolei powtarzane w pętli aż nie powstanie akceptowalna (albo do ustalonej granicy powtórzeń)
 
+## Wnioski
+
+Niestety po przeprowadzeniu wielu prób z różnymi wartościami wielkości populacji, iteracjami i parametrami odpowiadającymi za prawdopodobieństwo zajścia krzyżówki i  mutacji inicjalna populacja powstała z zachłannego szukania ścieżki w grafie miała w sobie ścieżkę która, obejmowała największą liczbę wierzchołków niż kolejne mutacje.
+
 ## Źródła i inspiracje
 1. https://jaketae.github.io/study/genetic-algorithm/
 2. https://towardsdatascience.com/evolution-of-a-salesman-a-complete-genetic-algorithm-tutorial-for-python-6fe5d2b3ca35
