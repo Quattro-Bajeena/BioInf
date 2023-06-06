@@ -2,3 +2,6 @@ When it comes to databases containing human genomic data, as opossed to animal o
 
 
 Wan, Z., Hazel, J.W., Clayton, E.W. et al. Sociotechnical safeguards for genomic data privacy. Nat Rev Genet 23, 429–445 (2022)
+
+
+Genomic databases play a crucial role in the field of genetics and genomics, providing researchers with vast repositories of genetic information for analysis and exploration. These databases are comprehensive collections of genomic data, including DNA sequences, gene annotations, genetic variants, and other related information. They serve as valuable resources for studying the structure, function, and evolution of genomes across various species. Genomic databases store data from diverse sources, such as genome sequencing projects, research studies, and public contributions. They enable researchers to access and analyze genetic data on a large scale, facilitating the discovery of genetic variations associated with diseases, the identification of gene functions, and the exploration of genetic relationships between different organisms.
