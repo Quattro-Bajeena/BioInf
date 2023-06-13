@@ -1,19 +1,27 @@
 
 
 
-# Overview of Genetic Databases
+# Overview of Genomic Databases
 
 **Autor: Mateusz Oleszek, nr. 144608**
 
-Computer databases play a crucial role in organizing and accessing the vast amount of biological data. The Los Alamos Sequence Database, established in 1979 and later known as GenBank, served as an early repository for biological sequences. In 1982, GenBank was transferred to the National Center for Biotechnology Information (NCBI), where it currently resides. By the end of 1983, GenBank stored over 2,000 sequences with nearly 1 million base pairs. Concurrently, the International Nucleotide Sequence Database Collaboration (INSDC) was formed by NCBI, EMBL, and DDBJ to manage the growing amount of nucleotide and amino acid sequence data. The INSDC databases have witnessed exponential growth, now housing over 95 billion base pairs.
+Genomic databases play a crucial role in the field of genetics and genomics, providing researchers with vast repositories of genetic information for analysis and exploration. These databases are comprehensive collections of genomic data, including DNA sequences, gene annotations, genetic variants, and other related information. They serve as valuable resources for studying the structure, function, and evolution of genomes across various species. Genomic databases store data from diverse sources, such as genome sequencing projects, research studies, and public contributions. They enable researchers to access and analyze genetic data on a large scale, facilitating the discovery of genetic variations associated with diseases, the identification of gene functions, and the exploration of genetic relationships between different organisms.
 
-To handle the vast amount of raw sequence data, specialized databases have been created, including genome browsers, model organism databases, and process-specific databases. The number of genomics databases and tools has significantly increased, as evidenced by over 1,000 listings in a recent issue of Nucleic Acids Research. Furthermore, it is estimated that there are approximately 3,000 distinct genomic resources, tools, and databases available online.
+The Los Alamos Sequence Database, established in 1979 and later known as GenBank, served as an early repository for biological sequences. In 1982, GenBank was transferred to the National Center for Biotechnology Information (NCBI), where it currently resides. By the end of 1983, GenBank stored over 2,000 sequences with nearly 1 million base pairs. Concurrently, the International Nucleotide Sequence Database Collaboration (INSDC) was formed by NCBI, EMBL, and DDBJ to manage the growing amount of nucleotide and amino acid sequence data. The INSDC databases have witnessed exponential growth, now housing over 95 billion base pairs.
+
+To handle the vast amount of raw sequence data, specialized databases have been created, including genome browsers, model organism databases, and process-specific databases. The number of genomics databases and tools has significantly increased Furthermore, it is estimated that there are approximately 3,000 distinct genomic resources, tools, and databases available online.
 
 ### Sequence Data Repositories:
 
 The International Nucleotide Sequence Database Collaboration (INSDC) comprises GenBank, EMBL, and DDBJ, which accept sequence submissions from researchers worldwide. Each submission receives a unique identification number and is stored in a library. However, the exponential growth of data poses challenges in maintaining accuracy and accessibility. Duplication and incomplete or incorrect information are common issues. Efforts like RefSeq aim to curate and correct sequence data, but the vast amount of data makes it difficult to annotate and organize every entry.
 
 Another challenge is the lack of context and annotation in repository data, making them less useful for research. Developers have repurposed GenBank data to create specialized databases, tailored to specific aesthetics, project history, and community needs. These databases provide better organization and access to genomic data. The main categories of such databases are further discussed in the following sections.
+
+<p align="middle">
+<img src="F:\Programowanie\Studia\Biologia\BioInf\sprawozdanie\screenshots\Sharex_firefox_2023-06-06_12-47-29_55889.jpg" style="zoom:50%;" />
+<em>Wzrost ilości danych w bazie GenBank na przestrzeni lat</em>
+</p>
+
 
 ### General Genome Browsers:
 
@@ -47,7 +55,11 @@ Ensuring accurate data and efficient management and curation are ongoing challen
 
 ### Conclusion:
 
-Genomic data resources, including sequence data repositories, general genome browsers, species- and taxa-specific databases, and subject-specific databases, have revolutionized the field of bioinformatics. They provide researchers with invaluable tools to explore and analyze genetic information. However, challenges such as maintaining accuracy, accessibility, and organization of data persist. Privacy concerns have necessitated the removal of large datasets from  public databases, and the analysis of community genomes requires unique  tools and databases. Another obstacle is the overwhelming number of  available genomic resources, making it difficult for researchers to  locate and effectively utilize them. Despite these challenges, the  rewards and opportunities provided by genomic data have been  significant, enabling new discoveries and interdisciplinary  relationships. Looking ahead, as the amount of data continues to grow,  it is crucial for the scientific community to find solutions, such as  advanced training, to ensure that amazing discoveries can be made.
+Genomic data resources, including sequence data repositories, general genome browsers, species- and taxa-specific databases, and subject-specific databases, have revolutionized the field of bioinformatics. They provide researchers with invaluable tools to explore and analyze genetic information. However, challenges such as maintaining accuracy, accessibility, and organization of data persist. 
+When it comes to databases containing human genomic data a big problem of privicy and security also emerges, posing both technical and societal challenge. Such as sufficient anonymization, confidentiality and managing access. They require designing the systems from the ground up with privacy in mid. Those concerns have necessitated the removal of large datasets from  public databases in the past. 
+Another obstacle is the overwhelming number of  available genomic resources, making it difficult for researchers to  locate and effectively utilize them. Despite these challenges, the  rewards and opportunities provided by genomic data have been  significant, enabling new discoveries and interdisciplinary  relationships. Looking ahead, as the amount of data continues to grow,  it is crucial for the scientific community to find solutions, such as  advanced training, to ensure that amazing discoveries can be made.
 
 ### References
-The essay was based on "Genomic Data Resources: Challenges and Promises" by Warren C. Lathe III (OpenHelix), Jennifer M. Williams (OpenHelix), Mary E. Mangan (OpenHelix), and Donna Karolchik (University of California, Santa Cruz Genome Bioinformatics Group), published in Nature Education in 2008 (Lathe, Williams, Mangan, & Karolchik, 2008, p. 2).
+The essay was based on "Genomic Data Resources: Challenges and Promises" by Warren C. Lathe III (OpenHelix), Jennifer M. Williams (OpenHelix), Mary E. Mangan (OpenHelix), and Donna Karolchik (University of California, Santa Cruz Genome Bioinformatics Group), published in Nature Education in 2008 (Lathe, Williams, Mangan, & Karolchik, 2008, p. 2). 
+
+Wan, Z., Hazel, J.W., Clayton, E.W. et al. Sociotechnical safeguards for genomic data privacy. Nat Rev Genet 23, 429–445 (2022)
